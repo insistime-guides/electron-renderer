@@ -5,7 +5,7 @@
   "description": "electron renderer",
   "keywords": [],
   "scripts": {
-    "build": "qwebpack build ./webpack/qiao.webpack.js electron17.1-renderer"
+    "build": "qwebpack build ./webpack/qiao.webpack.js"
   },
   "author": {
     "name": "qiaowenbin",

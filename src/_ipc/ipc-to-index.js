@@ -1,6 +1,6 @@
 'use strict';
 
-import { ipcRenderer } from 'electron';
+// import { ipcRenderer } from 'electron';
 
 // channel
 const channel = 'ipc-to-index';
@@ -9,5 +9,5 @@ const channel = 'ipc-to-index';
  * ipc to index
  */
 export function ipcToIndex(){
-  ipcRenderer.send(channel);
+  window.ipcRenderer.send(channel);
 }

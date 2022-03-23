@@ -1,6 +1,6 @@
 'use strict';
 
-import { ipcRenderer } from 'electron';
+// import { ipcRenderer } from 'electron';
 
 // channel
 const channel = 'ipc-log';
@@ -10,7 +10,7 @@ const channel = 'ipc-log';
  * @param {*} msg 
  */
 export function infoLog(msg){
-  ipcRenderer.send(channel, {msg:msg, type:'info'});
+  window.ipcRenderer.send(channel, {msg:msg, type:'info'});
 }
 
 /**
@@ -18,7 +18,7 @@ export function infoLog(msg){
  * @param {*} msg 
  */
 export function warnLog(msg){
-  ipcRenderer.send(channel, {msg:msg, type:'warn'});
+  window.ipcRenderer.send(channel, {msg:msg, type:'warn'});
 }
 
 /**
@@ -26,5 +26,5 @@ export function warnLog(msg){
  * @param {*} msg 
  */
 export function errorLog(msg){
-  ipcRenderer.send(channel, {msg:msg, type:'error'});
+  window.ipcRenderer.send(channel, {msg:msg, type:'error'});
 }
