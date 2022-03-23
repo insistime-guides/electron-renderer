@@ -1,0 +1,21 @@
+$pageWidth: 335px;
+$pageHeight: 520px;
+
+$loginSettingHeight: 30px;
+
+#root {
+    width: $pageWidth;
+    height: $pageHeight;
+}
+
+.login-container {
+    width: $pageWidth;
+    height: $pageHeight;
+    background-color: rgba(0, 0, 0, 1);
+
+    .login-title{
+        width: $pageWidth;
+        height: $loginSettingHeight;
+        -webkit-app-region: drag;
+    }
+}
