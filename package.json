@@ -1,11 +1,10 @@
 {
-  "name": "electron-renderer-login",
-  "version": "0.0.6",
+  "name": "electron-renderer",
+  "version": "0.0.1",
   "private": true,
-  "description": "electron renderer login",
+  "description": "electron renderer",
   "keywords": [],
   "scripts": {
-    "dev": "qwebpack dev ./webpack/qiao.webpack.js electron17.1-renderer",
     "build": "qwebpack build ./webpack/qiao.webpack.js electron17.1-renderer"
   },
   "author": {

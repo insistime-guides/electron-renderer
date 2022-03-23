@@ -2,19 +2,18 @@
 
 // react
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 // login
-import LoginComponent from './login-component.js';
-import { ipcLoginSuccess } from './ipc/ipc-login.js';
+import LoginComponent from '@components/login/login-ui/login.js';
+import { ipcLoginSuccess } from '@ipc/ipc-login.js';
 
 // log
-import { infoLog, warnLog, errorLog } from './ipc/ipc-log.js';
+import { infoLog, warnLog, errorLog } from '@ipc/ipc-log.js';
 
 /**
  * login container
  */
-class LoginContainer extends React.Component {
+export default class LoginContainer extends React.Component {
 
   constructor(props) {
     super(props);
@@ -75,8 +74,3 @@ class LoginContainer extends React.Component {
     );
   }
 }
-
-ReactDOM.render(
-    <LoginContainer />,
-    document.getElementById('root')
-);

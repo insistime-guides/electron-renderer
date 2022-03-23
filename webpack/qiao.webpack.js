@@ -1,30 +1,25 @@
-var path = require('path');
+'use strict';
 
-var distPath = path.resolve(__dirname, '../../electron-app/renderer-login');
+// alias
+var alias = require('./alias.js');
+
+// entry
+var entry = require('./entry.js');
+
+// output
+var output = require('./output.js');
+
+// plugins
+var plugins = require('./plugins.js');
 
 /**
  * qiao.webpack.js
  */
 module.exports = {
-  devServer: {
-    static: distPath,
+  resolve: {
+    alias: alias,
   },
-  entry: {
-    app: path.resolve(__dirname, '../src/login-container.js'),
-  },
-  output: {
-    filename  : '[name].bundle.js',
-    path      : distPath,
-    clean     : true,
-  },
-  plugins: [
-    {
-      type    : 'html',
-      inject  : 'body',
-      template: path.resolve(__dirname, './template.html')
-    }
-  ],
-  module: {
-    rules: [],
-  },
+  entry: entry,
+  output: output,
+  plugins: plugins
 };
