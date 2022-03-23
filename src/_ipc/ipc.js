@@ -1,4 +1,4 @@
 'use strict';
 
 export * from './ipc-log.js';
-export * from './ipc-login.js';
+export * from './ipc-to-index.js';

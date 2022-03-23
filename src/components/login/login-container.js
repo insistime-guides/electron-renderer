@@ -5,7 +5,7 @@ import React from 'react';
 
 // login
 import LoginComponent from '@components/login/login-ui/login.js';
-import { ipcLoginSuccess } from '@ipc/ipc-login.js';
+import { ipcToIndex } from '@ipc/ipc-to-index.js';
 
 // log
 import { infoLog, warnLog, errorLog } from '@ipc/ipc-log.js';
@@ -59,7 +59,7 @@ export default class LoginContainer extends React.Component {
 
     alert('login success');
     warnLog('login success');
-    ipcLoginSuccess(name);
+    ipcToIndex();
   }
 
   render() {

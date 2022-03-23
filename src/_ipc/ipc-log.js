@@ -3,7 +3,7 @@
 import { ipcRenderer } from 'electron';
 
 // channel
-const channel = 'renderer-log';
+const channel = 'ipc-log';
 
 /**
  * info log
