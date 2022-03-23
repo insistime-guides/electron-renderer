@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/insistime/electron-renderer-login"
+    "url": "git+https://github.com/insistime/electron-renderer"
   },
   "devDependencies": {
     "qiao-webpack": "^0.1.3"
