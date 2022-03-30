@@ -10,7 +10,7 @@ export default class IndexContainer extends React.Component {
 
   onClick(){
     const url = 'https://www.baidu.com/';
-    window.electron.openUrl(url);
+    window.electron.shellOpenUrl(url);
   }
 
   render() {
