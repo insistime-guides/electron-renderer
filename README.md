@@ -5,6 +5,7 @@
 1. preload
 2. ls
 3. open url
+4. shell
 
 ### 0.0.1.20220323
 1. init project
