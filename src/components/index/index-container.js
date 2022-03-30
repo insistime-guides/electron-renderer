@@ -8,9 +8,13 @@ import React from 'react';
  */
 export default class IndexContainer extends React.Component {
 
-  onClick(){
+  async onClick(){
     const url = 'https://www.baidu.com/';
     window.electron.shellOpenUrl(url);
+
+    await window.electron.lsSet('test', 'nihao');
+    let s = await window.electron.lsGet('test');
+    console.log(s);
   }
 
   render() {
