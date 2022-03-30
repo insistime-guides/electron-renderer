@@ -58,7 +58,7 @@ export default class LoginContainer extends React.Component {
 
     alert('login success');
     warnLog('login success');
-    window.electron.toIndex();
+    window.electron.toIndexWindow();
   }
 
   render() {
