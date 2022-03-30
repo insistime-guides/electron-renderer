@@ -4,6 +4,7 @@
 ### 0.0.2.20220330
 1. preload
 2. ls
+3. open url
 
 ### 0.0.1.20220323
 1. init project
