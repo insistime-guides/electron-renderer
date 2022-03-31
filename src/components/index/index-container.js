@@ -12,14 +12,8 @@ import { infoLog } from '@util/log.js';
 export default class IndexContainer extends React.Component {
 
   async onClick(){
-    const url = 'https://www.baidu.com/';
-    window.electron.shellOpenUrl(url);
-
-    await window.electron.lsSet('test', 'nihao');
-    let s = await window.electron.lsGet('test');
-    console.log(s);
-
-    infoLog('nihao nihao');
+    const res = await window.electron.shortcutGlobal('CommandOrControl+X', 'shortcutShowMenu');
+    console.log(res);
   }
 
   render() {
