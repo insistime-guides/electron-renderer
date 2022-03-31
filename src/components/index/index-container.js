@@ -16,6 +16,12 @@ export default class IndexContainer extends React.Component {
     console.log(res);
   }
 
+  componentDidMount(){
+    window.electron.darkModeChange((isDarkMode) => {
+      console.log(isDarkMode);
+    });
+  }
+
   render() {
     return (
       <>
