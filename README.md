@@ -1,6 +1,9 @@
 # electron-renderer
 
 ## version
+### 0.0.4.20220401
+1. webpack dev
+
 ### 0.0.3.20220331
 1. log init
 2. shortcut
