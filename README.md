@@ -3,6 +3,7 @@
 ## version
 ### 0.0.4.20220401
 1. webpack dev
+2. ipc
 
 ### 0.0.3.20220331
 1. log init
