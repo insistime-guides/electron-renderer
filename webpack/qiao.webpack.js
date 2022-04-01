@@ -3,6 +3,9 @@
 // alias
 var alias = require('./alias.js');
 
+// dev
+var dev = require('./dev.js');
+
 // entry
 var entry = require('./entry.js');
 
@@ -16,10 +19,11 @@ var plugins = require('./plugins.js');
  * qiao.webpack.js
  */
 module.exports = {
-  resolve: {
+  devServer : dev,
+  entry     : entry,
+  output    : output,
+  plugins   : plugins,
+  resolve   : {
     alias: alias,
   },
-  entry: entry,
-  output: output,
-  plugins: plugins
 };
