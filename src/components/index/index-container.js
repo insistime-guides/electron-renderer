@@ -12,12 +12,12 @@ import { infoLog } from '@util/log.js';
 export default class IndexContainer extends React.Component {
 
   async onClick(){
-    const res = await window.electron.shortcutGlobal('CommandOrControl+X', 'shortcutShowMenu');
+    const res = await window.electron.shortcutGlobalIPC('CommandOrControl+X', 'shortcutShowMenu');
     console.log(res);
   }
 
   componentDidMount(){
-    window.electron.darkModeChange((isDarkMode) => {
+    window.electron.darkModeChangeIPC((isDarkMode) => {
       console.log(isDarkMode);
     });
   }

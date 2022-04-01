@@ -5,7 +5,7 @@
  * @param {*} msg 
  */
 export function infoLog(msg){
-  window.electron.log(msg, 'info');
+  window.electron.logIPC(msg, 'info');
 }
 
 /**
@@ -13,7 +13,7 @@ export function infoLog(msg){
  * @param {*} msg 
  */
 export function warnLog(msg){
-  window.electron.log(msg, 'warn');
+  window.electron.logIPC(msg, 'warn');
 }
 
 /**
@@ -21,5 +21,5 @@ export function warnLog(msg){
  * @param {*} msg 
  */
 export function errorLog(msg){
-  window.electron.log(msg, 'error');
+  window.electron.logIPC(msg, 'error');
 }
